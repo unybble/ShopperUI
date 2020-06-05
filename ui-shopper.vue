@@ -60,7 +60,7 @@
         },
         mounted: function () {
           axios
-            .get("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/shoes.json")
+            .get("./shoes.json")
             .then((res) => {
               this.$data.shopItems = res.data.shoes;
             });
